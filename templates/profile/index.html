@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3RwMjU2LWJhY2tncm91bmQtMDgteC5qcGc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        background-color: #282828;
+        }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #282828;
+    }
+
+    .logo {
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding: 20px;
+        font-size: 40px;
+        left: 80px;
+        font-weight: bolder;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        left: -80px;
+        position: relative;
+        font-weight: bolder;
+    }
+
+    nav ul li .separator {
+        color: #b3b3b3;
+    }
+
+    main {
+        padding: 100px 20px;
+    }
+
+    main h1 {
+        font-size: 90px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+        font-family: sans-serif;
+        position: relative;
+        top: 50px;
+    }
+
+    main p {
+        font-size: 25px;
+        margin-bottom: 60px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        position: relative;
+        top: 50px;
+    }
+
+    .btn {
+        /* display: inline-block; */
+        padding: 20px 80px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        background-color: #1db954;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bolder;
+        position: relative;
+        top: 50px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Portfolio</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="separator">|</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Music for everyone.</h1>
+        <p>Millions of songs. No credit card needed.</p>
+        <a href="{% url 'home' %}" class="btn">Create New Profile</a>
+    </main>
+</body>
+</html>
